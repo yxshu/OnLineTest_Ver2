@@ -186,6 +186,20 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnLineTest_Ver2.BLL\OnLineTest_Ver2.BLL.csproj">
+      <Project>{c7ca1219-a7a4-4849-adeb-bb03729c0936}</Project>
+      <Name>OnLineTest_Ver2.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnLineTest_Ver2.Entity\OnLineTest_Ver2.Entity.csproj">
+      <Project>{9753ae87-92e7-4198-99dc-f64773f639f9}</Project>
+      <Name>OnLineTest_Ver2.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OnLineTest_Ver2.Utility\OnLineTest_Ver2.Utility.csproj">
+      <Project>{aff844ee-c12a-4abe-a48d-c2385fc18d0b}</Project>
+      <Name>OnLineTest_Ver2.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
