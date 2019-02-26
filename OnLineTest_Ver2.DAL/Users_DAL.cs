@@ -8,6 +8,6 @@ using OnLineTest_Ver2.Entity;
 namespace OnLineTest_Ver2.DAL
 {
    public class Users_DAL
-    {
+    {        
     }
 }
