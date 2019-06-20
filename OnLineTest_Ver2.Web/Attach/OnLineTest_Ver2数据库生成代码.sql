@@ -302,7 +302,7 @@ drop table QuestionFORPanduan
 create table QuestionFORPanduan----- QuestionFORPanduan判断题
 	(
 	QuestionFORPanduanId int identity(1,1) primary key,
-	QuestionId int not null foreign key references QuestionFORGeneral(QuestionId),
+	QuestionFORGeneralId int not null foreign key references QuestionFORGeneral(QuestionId),
 	CorrectAnswer bit  not null
 	)
 GO
@@ -314,7 +314,7 @@ drop table QuestionFORDanxuan
 create table QuestionFORDanxuan----- QuestionFORDanxuan单选题
 	(
 	QuestionFORDanxuanId int identity(1,1) primary key,
-	QuestionId int not null foreign key references QuestionFORGeneral(QuestionId),
+	QuestionFORGeneralId int not null foreign key references QuestionFORGeneral(QuestionId),
 	AnswerA varchar(max)  not null,
 	AnswerB varchar(max)  not null,
 	AnswerC varchar(max)  not null,
